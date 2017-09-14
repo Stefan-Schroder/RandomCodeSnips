@@ -1,0 +1,36 @@
+ """DEBUG"""
+ # ndom.py
+ # Stephan Jamieson
+ # 5/1/2015
+ def convert(number, source, target):
+     """DEBUG""";print('convert')
+     position=0
+     result=0
+     while number>0:
+         digit=number%target
+         result=result+digit*source**position
+         number=number//target
+         position=position+1
+     return result
+     
+ def ndom_to_decimal(n):
+     """DEBUG""";print('ndom_to_decimal')
+     return convert(n, 6, 10)
+     
+ def decimal_to_ndom(n):
+     """DEBUG""";print('decimal_to_ndom')
+     return convert(n, 10, 6)
+ 
+ def ndom_add(a, b):
+     """DEBUG""";print('ndom_add')
+     a=convert(a, 6, 10)
+     b=convert(b, 6, 10)
+     result=a+b
+     return convert(result, 10, 6)
+     
+ def ndom_multiply(a, b):
+     """DEBUG""";print('ndom_multiply')
+     a=convert(a, 6, 10)
+     b=convert(b, 6, 10)
+     result=a*b
+     return convert(result, 10, 6)

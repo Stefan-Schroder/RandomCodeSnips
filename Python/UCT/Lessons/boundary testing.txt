@@ -1,0 +1,35 @@
+Program:
+number = eval(input("enter the number"))
+number = number+10
+
+if(number<20):
+	print("Small number")
+else:
+	print("large number")
+
+if(number%5==0):
+	print(" divible by 5")
+
+
+
+
+equivalece classes:
+	not divisable by 5 and small: 4
+	diviable by 5 and large: 10
+	diviable by 5 and small: 5
+	not divisable and large: 34
+
+boundarys:
+	large number = 10,11
+	small number = 9
+
+statment coverage:(All the statments tested once)
+	5 = small number and diviable by 5
+	14 = large value
+
+path coverage:(makes sure that all the paths are tested)
+	5 = small number and divisable by 5
+	15 = large number and divisable by 5
+	4 = small number
+	14 = large number
+	
